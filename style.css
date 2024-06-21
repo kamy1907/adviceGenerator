@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url(./Manrope-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 28px;
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(150, 100%, 66%);
+    font-family: 'Manrope';
+}
+.advice-wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center; 
+    border-radius: 10px;
+    background-color:  hsl(217, 19%, 24%);
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.342);
+}
+button{
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    color: hsl(217, 19%, 24%);  
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(110%);   
+}
+button:hover{
+    background-color: hsl(150, 100%, 70%);
+    box-shadow: 0 0 10px rgba(81, 253, 124, 0.764);
+}
+img{
+    width: 100%;
+}
+.adviceNo + #adviceID{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.dice{
+    width: 109%;
+}
+.adviceNo{
+    font-size: 19px;
+    letter-spacing: 5px;
+}
+#adviceContainer{
+    min-height: 50px;
+    margin-top: 5%;
+}
+p{
+    color:  hsl(193, 38%, 86%);
+}
