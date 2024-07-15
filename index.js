@@ -13,12 +13,14 @@ function fetchAdvice(){
         adviceContainer.textContent = `"${advice}"`
         adviceID.textContent = `${id}`
     })
-    .catch(err => {
+    .catch(() => {
         console.log("something bad happened")
     })
 
 }
-
+document.addEventListener('DOMContentLoaded', ()=>{
+    fetchAdvice()
+})
 dice.addEventListener('click', ()=>{
     fetchAdvice();
 })
